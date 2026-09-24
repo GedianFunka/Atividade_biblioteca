@@ -1,0 +1,405 @@
+{
+  "info": {
+    "_postman_id": "f41d632f-53c9-410b-854b-2fb99876e2dc",
+    "name": "Atividade_API_Biblioteca",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54503909",
+    "_collection_link": "https://go.postman.co/collection/54503909-f41d632f-53c9-410b-854b-2fb99876e2dc?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Buscando livros",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/livro",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "livro"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscando livros por titulo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:5500/livro/busca/1984",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "livro",
+            "busca",
+            "1984"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscando livros por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:5500/livro",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "livro"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscando livros ordenados",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/livro/ordenados",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "livro",
+            "ordenados"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrando livro",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Dona Bonita\",\r\n  \"autor\": \"Machado de Assus\",\r\n  \"isbn\": \"9788508596004\",\r\n  \"ano_publicacao\": 2026,\r\n  \"categoria\": \"Romance\",\r\n  \"quantidade\": 50\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/livro",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "livro"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizando livro",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Dom Casmurro\",\r\n  \"autor\": \"Machado de Assis\",\r\n  \"isbn\": \"9788508046004\",\r\n  \"ano_publicacao\": 1899,\r\n  \"categoria\": \"Romance\",\r\n  \"quantidade\": 5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/livro/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "livro",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletando livro",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Dom Casmurro\",\r\n  \"autor\": \"Machado de Assis\",\r\n  \"isbn\": \"9788508046004\",\r\n  \"ano_publicacao\": 1899,\r\n  \"categoria\": \"Romance\",\r\n  \"quantidade\": 5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/livro/7",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "livro",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscando livros",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:5500/usuario",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "usuario"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscando livros por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:5500/usuario/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "usuario",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrando usuario",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Gedian Funka\",\r\n  \"cpf\": \"111.010.769-25\",\r\n  \"email\": \"gedian.funka@email.com\",\r\n  \"telefone\": \"(47) 99999-0022\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/usuario",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "usuario"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizando usuario",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nome\": \"Gedian Silva\",\r\n  \"cpf\": \"123.456.789-01\",\r\n  \"email\": \"gedian.silva@email.com\",\r\n  \"telefone\": \"(47) 98888-0001\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/usuario/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "usuario",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletando usuario",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/usuario/5",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "usuario",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscando emprestimos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:5500/emprestimo",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "emprestimo"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscando emprestimos por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:5500/emprestimo/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "emprestimo",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cadastrando emprestimo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"id_livro\": 1,\r\n  \"id_usuario\": 1,\r\n  \"data_emprestimo\": \"2026-09-24\",\r\n  \"data_prevista_devolucao\": \"2026-10-08\",\r\n  \"status\": \"em andamento\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/emprestimo",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "emprestimo"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizando emprestimo",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"data_emprestimo\": \"2026-09-24\",\r\n  \"data_prevista_devolucao\": \"2026-10-08\",\r\n  \"data_devolucao\": \"2026-10-05\",\r\n  \"status\": \"devolvido\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:5500/emprestimo/6",
+          "host": [
+            "localhost"
+          ],
+          "port": "5500",
+          "path": [
+            "emprestimo",
+            "6"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

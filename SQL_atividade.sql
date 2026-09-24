@@ -56,26 +56,26 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 INSERT INTO `SQL_atividade`.`livro` (titulo, autor, isbn, ano_publicacao, categoria, quantidade) VALUES
-('Dom Casmurro',                'Machado de Assis',       '9788508046004', 1899, 'Romance',    4),
-('O Cortico',                   'Aluisio Azevedo',        '9788508046011', 1890, 'Romance',    2),
-('1984',                        'George Orwell',          '9788535914849', 1949, 'Ficcao',     5),
-('Clean Code',                  'Robert C. Martin',       '9780132350884', 2008, 'Tecnologia', 3),
-('O Pequeno Principe',          'Antoine de Saint-Exupery','9788574065877', 1943, 'Infantil',   6),
-('Sapiens',                     'Yuval Noah Harari',      '9788525432186', 2011, 'Historia',   2);
+('Dom Casmurro','Machado de Assis','9788508046004', 1899,'Romance',4),
+('O Cortico','Aluisio Azevedo','9788508046011', 1890, 'Romance',2),
+('1984','George Orwell','9788535914849', 1949, 'Ficcao',5),
+('Clean Code','Robert C. Martin','9780132350884', 2008, 'Tecnologia',3),
+('O Pequeno Principe','Antoine de Saint-Exupery','9788574065877',1943,'Infantil',6),
+('Sapiens','Yuval Noah Harari','9788525432186',2011,'Historia',2);
 
 INSERT INTO `SQL_atividade`.`usuario` (nome, cpf, email, telefone) VALUES
-('Gedian Silva',      '123.456.789-01', 'gedian.silva@email.com',    '(47) 99999-0001'),
-('Maria Fernandes',   '234.567.890-12', 'maria.fernandes@email.com', '(47) 99999-0002'),
-('Joao Pereira',      '345.678.901-23', 'joao.pereira@email.com',    '(47) 99999-0003'),
-('Ana Beatriz Costa', '456.789.012-34', 'ana.costa@email.com',       '(47) 99999-0004');
+('Gedian Silva','123.456.789-01','gedian.silva@email.com','(47) 99999-0001'),
+('Maria Fernandes','234.567.890-12','maria.fernandes@email.com','(47) 99999-0002'),
+('Joao Pereira','345.678.901-23','joao.pereira@email.com','(47) 99999-0003'),
+('Ana Beatriz Costa','456.789.012-34','ana.costa@email.com','(47) 99999-0004');
 
 INSERT INTO `SQL_atividade`.`emprestimo`
   (data_emprestimo, data_prevista_devolucao, data_devolucao, status, id_livro, id_usuario) VALUES
 ('2026-09-01', '2026-09-15', '2026-09-14', 'devolvido',     1, 1),
-('2026-09-05', '2026-09-19', NULL,         'em andamento',  3, 2),
-('2026-08-20', '2026-09-03', NULL,         'atrasado',      4, 3),
-('2026-09-10', '2026-09-24', NULL,         'em andamento',  5, 4),
-('2026-09-12', '2026-09-26', NULL,         'em andamento',  2, 1);
+('2026-09-05', '2026-09-19', NULL,'em andamento',  3, 2),
+('2026-08-20', '2026-09-03', NULL,'atrasado',      4, 3),
+('2026-09-10', '2026-09-24', NULL,'em andamento',  5, 4),
+('2026-09-12', '2026-09-26', NULL,'em andamento',  2, 1);
 
 -- RF02 / RF05: Listagem de livros ordenada por titulo
 SELECT * FROM livro ORDER BY titulo ASC;
