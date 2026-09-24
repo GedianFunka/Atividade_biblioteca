@@ -1,17 +1,17 @@
 const mysql = require('mysql2');
 
-const connection = mysql.connection({
+const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'root',
     database: 'SQL_atividade'
 });
 
-connectio.connect((erro) => {
+connection.connect((erro) => {
     if(erro){
         console.error('Erro ao se conectar ao banco de dados: ', erro.message);
     }else{
-        console.log('Conexõa com o banco de dados SQL_atividade estabelecida com sucesso!!')
+        console.log('Conexão com o banco de dados SQL_atividade estabelecida com sucesso!!')
     }
 })
 
